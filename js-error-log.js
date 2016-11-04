@@ -1,6 +1,6 @@
 var throttle = 0;
 
-window.onerror = function(msg, url, line, col)
+window.onerror = function(msg, url, line)
 {
 	// Return if we've sent more than 10 errors.
 	throttle++;
