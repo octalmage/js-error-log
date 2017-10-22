@@ -10,6 +10,8 @@
         // Log the error.
         var req = new XMLHttpRequest();
         var params = 'action=js_log_error&msg=' + encodeURIComponent(msg) + '&url=' + encodeURIComponent(url) + "&line=" + line;
+        // Replace spaces with +, browsers expect this for form POSTs.
+        params = params.replace(/%20/g, '+');
         req.open( 'POST', ajaxurl );
         req.setRequestHeader( 'Content-type', 'application/x-www-form-urlencoded' );
         req.send(params);
