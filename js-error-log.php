@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     JavaScript Error Log
  * Description:     Catch and log JavaScript errors locally.
- * Version:         0.0.1
+ * Version:         0.0.2
  * Author:          Jason Stallings
  * Author URI:      https://jason.stallin.gs
  * Text Domain:     js-error-log
